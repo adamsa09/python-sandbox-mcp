@@ -1,7 +1,8 @@
 # Python Sandbox MCP for LibreChat
 
 ## Goal
-Give LibreChat the ability to execute Python code, especially in the context of physics/math/engineering problem solving, without paying for the official LibreChat Code Interpreter API
+Initially, to give LibreChat the ability to execute Python code, especially in the context of physics/math/engineering problem solving, without paying for the official LibreChat Code Interpreter API.  
+In theory, MCP is provider-agnostic. Any platform with MCP support can plug in. Only tested provider has been LibreChat, however.
 
 ## Architecture
 LibreChat LLM  
@@ -18,7 +19,7 @@ Returned to LLM: `{"ok": bool, "stdout": string, "stderr": string, "exit_code": 
 > [!NOTE]
 > Assuming LibreChat `librechat.yaml` is set up. [For help on LibreChat configuration](https://www.librechat.ai/docs/configuration/librechat_yaml)  
 
-`librechat.yaml`
+in `librechat.yaml`
 1. Whitelist `host.docker.internal` under mcpSettings  
 ```
 mcpSettings:
@@ -69,7 +70,7 @@ Available libraries: numpy, sympy, scipy, matplotlib, pint, uncertainties.
 - Use matplotlib only if a graph is explicitly requested.
 ```
 
-## Compatible models
+## Model Compatibility
 Using the MCP with weaker models may not work due to unreliable tool calling.
 
 ## Adding python modules
