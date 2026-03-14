@@ -1,0 +1,7 @@
+mcp
+numpy
+sympy
+scipy
+matplotlib
+pint
+uncertainties
