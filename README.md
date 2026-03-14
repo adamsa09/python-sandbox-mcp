@@ -17,6 +17,7 @@ Returned to LLM: `{"ok": bool, "stdout": string, "stderr": string, "exit_code": 
 ## Initial LibreChat config
 > [!NOTE]
 > Assuming LibreChat `librechat.yaml` is set up. [For help on LibreChat configuration](https://www.librechat.ai/docs/configuration/librechat_yaml)  
+
 `librechat.yaml`
 1. Whitelist `host.docker.internal` under mcpSettings  
 ```
